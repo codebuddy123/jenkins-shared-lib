@@ -1,4 +1,4 @@
-def call ()
+def call()
 {
     script {
                 // Get Git Branch Name

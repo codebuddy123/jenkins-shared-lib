@@ -1,4 +1,5 @@
-slackSend(
+def call() {
+  slackSend(
         channel: 'app-jenkins',
         attachments: [[
             color: 'good',
@@ -7,4 +8,5 @@ slackSend(
                   "Triggered By: ${env.BUILD_USER}\n" +
                   "Branch: ${env.BRANCH_NAME}"
         ]]
-    )
+    )  
+}

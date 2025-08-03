@@ -1,5 +1,5 @@
 // create a groovy function 
-def call ()
+def call()
 {
     emailext (
         subject: "❌ FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
