@@ -6,5 +6,7 @@ def call()
                 // Get Build Triggered User (Requires Build User Vars Plugin)
                 wrap([$class: 'BuildUser']) {
                 env.BUILD_USER = env.BUILD_USER ?: 'Automated'
+
+                "echo metadata is set successfully"
             }
 }
